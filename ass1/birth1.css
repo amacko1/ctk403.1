@@ -1,0 +1,98 @@
+h1 {
+  color:#FFBA00;
+  font-family: open sans;
+  font-size: 30px;
+
+  border-bottom: solid;
+  border-width: 1px;
+  padding-left: 40px;
+  padding-bottom: 5px;
+
+}
+
+.date {
+
+  color: white;
+  font-family: open sans;
+  font-size: 18px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-bottom: 5px;
+}
+
+.city {
+
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-family: open sans;
+  font-size: 25px;
+
+  padding-top: 40px;
+
+
+}
+
+span {
+
+  color: #FFBA00;
+}
+a {
+  text-decoration: none;
+
+}
+
+.city a:visited {
+
+  color: white;
+  text-decoration: none;
+}
+
+.city a:hover {
+
+  color: #FFBA00;
+  text-decoration: none;
+}
+
+
+.socialmedia {
+
+  color: white;
+  float: right;
+  font-size: 30px;
+
+  padding-right: 40px;
+}
+.socialmedia a:visited {
+  color: white;
+  text-decoration: none;
+
+}
+
+.socialmedia a:hover {
+  text-decoration: none;
+  color: #FFBA00;
+}
+
+img {
+  width: 300px;
+  text-align: center;
+}
+
+.top3 {
+  color: white;
+  font-family: open sans;
+
+}
+
+.top3 a:visited {
+
+  color: white;
+  text-decoration: none;
+}
+
+.top3 a:hover {
+
+  color: #FFBA00;
+  text-decoration: none;
+}
