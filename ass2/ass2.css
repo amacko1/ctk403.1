@@ -1,0 +1,107 @@
+#bgcolor {
+
+
+  font-size: 36px;
+  width: 1920px;
+  height: 1080px;
+  background-color: #262F1C;
+  animation: back-ani 10s linear infinite;
+}
+
+
+
+
+#logocrock {
+  width: 1000px;
+  overflow: hidden;
+}
+
+#logocrock img {
+
+  width: 300px;
+  transition: all .25s;
+  padding-left: 480px;
+
+
+}
+
+#logocrock:hover img {
+
+  transform: scale(1.1);
+  filter: contrast(150%);
+
+}
+
+.circle1 {
+  font-size: 48px;
+  font-family: helvetica;
+  font-weight: bolder;
+  padding-left: 468px;
+  padding-top: 15px;
+  opacity: .5;
+
+  animation: circle1-ani 10s linear infinite;
+
+}
+
+
+@keyframes circle1-ani {
+  0%   { opacity: .0; left:0; }
+  50%  { opacity: .5; }
+  100% { opacity: .0; left: 1000px; }
+  0%   {color:#00FF00;}
+  50%  {color:#32CD32;}
+  100% {color:#00FA9A;}
+
+
+}
+
+#slide2 {
+    display: flex;
+
+      overflow: hidden;
+      padding-left: 850px;
+
+}
+
+#slide2 img {
+  transition: all .25s;
+}
+
+#slide2:hover img {
+  transform: rotate(90deg);
+  filter: contrast(200%);
+}
+
+#slide3 {
+
+overflow: hidden;
+
+
+}
+
+#slide3 img {
+  transition: all .25s;
+}
+
+#slide3:hover img {
+  transform: rotate(360deg);
+  filter: contrast(200%);
+}
+
+
+
+.fly {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .10;
+
+  animation: circle1-ani 5s linear infinite;
+}
+
+@keyframes fly-ani {
+  0%   { opacity: .0; left:0; }
+  50%  { opacity: .5; }
+  100% { opacity: .0; left: 1000px; }
+}
