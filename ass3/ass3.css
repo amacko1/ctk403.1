@@ -1,0 +1,51 @@
+
+
+h1 {
+  color: #FF0068;
+  font-family: helvetica;
+  font-weight: bolder;
+  padding-left: 600px;
+
+
+
+}
+
+#layer4{
+
+
+  transition: all .25s;
+  padding-left: 480px;
+filter: grayscale(100%);
+
+
+  width: 500px;
+  display: block;
+  transition: transform .25s linear;
+  transform-origin: left top;
+
+
+}
+
+
+#layer4:hover {
+
+  filter: grayscale(0%);
+
+transform: scale(1.1);
+}
+
+
+
+#words {
+  animation: wordsfade 1.0s;
+  transform-origin: right top;
+
+
+}
+
+
+@keyframes wordsfade {
+  0%   { transform: scale(0.1);}
+  100% { transform: scale(1.0);}
+
+}
