@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="ass4Draw.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+ <link rel="stylesheet" href="ass4Draw.css">
+<script src="sketch.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+<script src="sketch.js"></script>
+
+
+</head>
+<body>
+
+      <h1>
+        <button id="genNew">Generate Random Color Background</button>
+        <span id="color"></span>
+      </h1>
+
+<script>
+
+
+
+const setBg = () => {
+  const randomColor = Math.floor(Math.random()*16777215).toString(16);
+  document.body.style.backgroundColor = "#" + randomColor;
+  color.innerHTML = "#" + randomColor;
+}
+
+genNew.addEventListener("click", setBg);
+setBg();
+
+</script>
+
+</body>
+<html>

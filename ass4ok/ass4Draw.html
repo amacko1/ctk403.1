@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="ass4Draw.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+ <link rel="stylesheet" href="ass4Draw.css">
+
+
+</head>
+<body>
+
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ Menu</button>
+
+  </div>
+
+
+<button class="buttonbg" type="button" onclick="myFunction()">Change background</button>
+
+
+    <header class="flex">
+          <h1>MY PICTURES</h1>
+
+        </header>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="assets/1.png" style="width:100%">
+  <div class="text">ISU - Normal, IL</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="assets/2.png" style="width:100%">
+  <div class="text">Lake Geneva, IL</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="assets/3.png" style="width:100%">
+  <div class="text">Uptown Normal, IL</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4/ 4</div>
+  <img src="assets/4.png" style="width:100%">
+  <div class="text">Chicago, IL</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="https://www.instagram.com/illinoisnoscript/">More Pictures</a>
+    <a href="symmetryDraw.html">Draw you Kaleidoscope</a>
+
+</div>
+
+
+
+
+
+
+<script>
+
+
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+
+
+
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+function myFunction() {
+  document.body.style.backgroundColor = "#000000";
+  document.body.style.backgroundImage = "url('assets/pic.png')";
+}
+
+</script>
+
+</body>
+</html>
