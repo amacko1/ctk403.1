@@ -8,6 +8,7 @@ background-color: #f9f9f9;
 h1 {
 width: 100%;
 text-align: center;
+font-family: LEMON MILK;
 }
 
 nav {
@@ -42,6 +43,8 @@ nav a:hover {
 main {
 
   text-align: center;
+  font-family: open sans;
+  
 
 }
 
