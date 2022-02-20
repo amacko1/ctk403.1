@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link href="ass4Draw.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="responsive.css">
+
+
+</head>
+<body id="mainimg">
+
+
+
+  <nav >
+
+    <a href="#home">Home</a>
+    <a href="#pictures">Pictures</a>
+
+  </nav>
+
+
+  <main>
+            <h1 id="home">Home</h1>
+  <p>Illinois without a script! Illinois is a midwestern US state - Documenting everyday life through the eyes of a Brazilian.
+</p>
+
+
+  </main>
+
+
+<div id="pictures">
+
+  <img  src="assets/1.png" alt="Pic 1">
+  <img  src="assets/2.png" alt="Pic 2">
+  <img  src="assets/3.png" alt="Pic 3">
+  <img  src="assets/4.png" alt="Pic 4">
+  <img  src="assets/5.png" alt="Pic 5">
+  <img  src="assets/6.png" alt="Pic 6">
+    <img  src="assets/7.png" alt="Pic 7">
+
+</div>
+
+            <script>
+
+
+
+                $(function() {
+      $('nav a').bind('click',function(event){
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+          scrollTop: $($anchor.attr('href')).offset().top - 0
+        }, 1000);
+        event.preventDefault();
+      });
+    });
+            </script>
+
+
+
+
+
+</body>
+</html>
