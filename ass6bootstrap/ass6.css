@@ -8,7 +8,7 @@ body {
 .navlinks {
 
   float:right;
-  font-family: open sans, helvetica;
+  font-family: open sans, sans-serif;
   padding-right: 35px;
   padding-top: 30px;
   font-size: 20px;
@@ -37,7 +37,7 @@ body {
   font-family: DaisyWheel, verdana;
   font-size: 30px;
   padding-left: 35px;
-  padding-top: 30px;
+  padding-top: 25px;
 }
 
 .myname a{
@@ -60,8 +60,9 @@ body {
 .textabout {
 
   width: 100%;
-  padding-left: 120px;
-  padding-right: 120px;
+  font-size: 16px;
+  padding-left: 140px;
+  padding-right: 140px;
   padding-top: 20px;
 
 }
@@ -71,14 +72,14 @@ body {
   width: 100%;
   padding-left: 120px;
   padding-right: 120px;
-  padding-top: 100px;
+  padding-top: 60px;
   padding-bottom: 5px;
 }
 
 #cards {
 width: 100%;
 padding-left: 120px;
-padding-top: 30px;
+padding-top: 10px;
 
 }
 
@@ -107,6 +108,7 @@ padding-top: 30px;
   font-size: 20px;
   text-decoration: none;
   color: #2D2D2C;
+  padding-right: 9px;
 }
 
 .socialmedia a:visited {
