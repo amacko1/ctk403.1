@@ -34,7 +34,8 @@ body {
 
 .myname {
   width: 100%;
-  font-family: DaisyWheel, verdana;
+  font-family: 'DaisyWheel', sans-serif;
+
   font-size: 30px;
   padding-left: 35px;
   padding-top: 25px;
