@@ -1,3 +1,8 @@
+body {
+background-image: url('bg.png');
+}
+
+
 h1 {
   color:#FFBA00;
   font-family: open sans;
@@ -55,7 +60,7 @@ a {
 }
 
 
-.socialmedia {
+#socialmedia {
 
   color: white;
   float: right;
@@ -63,13 +68,13 @@ a {
 
   padding-right: 40px;
 }
-.socialmedia a:visited {
+#socialmedia a:visited {
   color: white;
   text-decoration: none;
 
 }
 
-.socialmedia a:hover {
+#socialmedia a:hover {
   text-decoration: none;
   color: #FFBA00;
 }
