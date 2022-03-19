@@ -21,7 +21,7 @@ h1 {
   font-family: open sans;
   font-size: 18px;
   padding-top: 40px;
-  padding-left: 40px;
+
   padding-bottom: 5px;
 }
 
@@ -79,9 +79,10 @@ a {
   color: #FFBA00;
 }
 
-img {
-  width: 300px;
+.pic img {
+  width: 500px;
   text-align: center;
+
 }
 
 .top3 {
