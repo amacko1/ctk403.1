@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
 
   <meta charset="UTF-8">
@@ -15,12 +16,12 @@
 
   <nav>
     <h1>Birthday Party </h1>
-    <div id="socialmedia"  role="social media icons">
+    <div id="socialmedia" alt="my social media icons">
 
-      <a href="https://www.linkedin.com/in/andreza-l-mackowiak-b31398106/" target="_blank" class="bi bi-linkedin"> </a>
-      <a href="https://www.facebook.com/andreza.leite2" target="_blank" class="bi bi-facebook"> </a>
-      <a href="https://www.youtube.com/user/andrezaleite1" target="_blank" class="bi bi-youtube"> </a>
-      <a href="https://www.instagram.com/illinoisnoscript/" target="_blank" class="bi bi-instagram"> </a>
+      <a href="https://www.linkedin.com/in/andreza-l-mackowiak-b31398106/" target="_blank" class="bi bi-linkedin" aria-label="linkedin"> </a>
+      <a href="https://www.facebook.com/andreza.leite2" target="_blank" class="bi bi-facebook" aria-label="facebook"> </a>
+      <a href="https://www.youtube.com/user/andrezaleite1" target="_blank" class="bi bi-youtube" aria-label="youtube"> </a>
+      <a href="https://www.instagram.com/illinoisnoscript/" target="_blank" class="bi bi-instagram" aria-label="instagram"> </a>
 
     </div>
 
@@ -29,67 +30,70 @@
 
 
 
-  <div class="city" role="google maps">
+  <div class="city" alt="Brazil google maps">
     <p> <a href="https://goo.gl/maps/jFE7ENts1p96vVCM6" aria-label="map of the city">
-        <b>Where was I born?</b> <br>Recife, Brazil</a></p>
+        Where was I born? <br>Recife, Brazil<a href="https://goo.gl/maps/jFE7ENts1p96vVCM6" aria-label="map of the city"></a></p>
 
   </div>
 
 
 
+  <main>
 
-  <div class="date" role="birthday's date">
+  <h3> My date of birth: <span>November 1, 1985</span></h3>
 
-    <h3> My date of birth: <span>November 1, 1985</span></h3>
-
-
-
-    <p><span>The number-one></span> hit song in the U.S. at the day of my birth was
+    <div class="date" alt="birthday's date">
+      <p><span>The number-one></span> hit song in the U.S. at the day of my birth was
       <span>Part-Time Lover by Stevie Wonder</span> as compiled by Billboard Hot 100 (November 2, 1985)
+      </p>
+
+    </div>
+
+
+    <!-- Start Button Play song -->
+    <div class="pic" alt="stevie wonder cover albun images">
+
+      <img alt="stevie wonder part-time lover albun cover" src="stevie.jpg">
+      <img alt="stevie wonder part-time lover instrumental albun cover" src="stevie2.jpg">
+
+    </div>
+  </main>
+
+  <script>
+    function play() {
+      var audio = document.getElementById("audio");
+      audio.play();
+    }
+
+
+    function pause() {
+      var audio = document.getElementById("audio");
+      audio.pause();
+    }
+  </script>
+
+  <input type="button" value="Play song" onclick="play()">
+  <audio id="audio" src="parttimelover.mp3"></audio>
+  <input type="button" value="Stop song" onclick="pause()">
+  <audio id="audio1" src="parttimelover.mp3"></audio>
+
+
+  <!--End Button Play song -->
+
+  <section>
+
+      <h3>TOP 3 songs of my Birthday</h3>
+    <div class="top3" alt="stevie wonder youtube songs">
+
+<p>
+      <ol>
+        <li>Miami Vice Theme - Jan Hammer <a href="https://www.youtube.com/watch?v=6nPTZqnIfFM" alt="miami Vice Theme - Jan Hammer"> (Listen the song) </a></li>
+        <li>We Built This City - Starship <a href="https://www.youtube.com/watch?v=K1b8AhIsSYQ" alt="We Built This City - Starship" > (Listen the song) </a></li>
+        <li>Separate Lives - Phil Collins and Marilyn Martin <a href="https://www.youtube.com/watch?v=vmMinSOWKQk" alt="Separate Lives - Phil Collins and Marilyn Martin"  > (Listen the song)</a> </li>
+      </ol>
     </p>
-
-  </div>
-
-
-      <!-- Start Button Play song -->
-      <div class="pic" role="cover albun images">
-
-        <img alt="stevie wonder part-time lover albun cover" src="stevie.jpg">
-        <img alt="stevie wonder part-time lover instrumental albun cover" src="stevie2.jpg">
-
-      </div>
-
-      <script>
-        function play() {
-          var audio = document.getElementById("audio");
-          audio.play();
-        }
-
-
-        function pause() {
-          var audio = document.getElementById("audio");
-          audio.pause();
-        }
-      </script>
-
-      <input type="button" value="Play song" onclick="play()">
-      <audio id="audio" src="parttimelover.mp3"></audio>
-      <input type="button" value="Stop song" onclick="pause()">
-      <audio id="audio1" src="parttimelover.mp3"></audio>
-
-
-      <!--End Button Play song -->
-
-
-      <div class="top3" role="links youtube songs">
-        <h3>TOP 3 songs of my Birthday</h3>
-
-        <ol>
-          <li>Miami Vice Theme - Jan Hammer <a href="https://www.youtube.com/watch?v=6nPTZqnIfFM"> (Click here) </a></li>
-          <li>We Built This City - Starship <a href="https://www.youtube.com/watch?v=K1b8AhIsSYQ"> (Click here) </a></li>
-          <li>Separate Lives - Phil Collins and Marilyn Martin <a href="https://www.youtube.com/watch?v=vmMinSOWKQk"> (Click here)</a> </li>
-        </ol>
-      </div>
+    </div>
+  </section>
 
 </body>
 

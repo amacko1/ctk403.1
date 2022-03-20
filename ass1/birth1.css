@@ -5,13 +5,19 @@ background-image: url('bg.png');
 
 h1 {
   color:#FFBA00;
-  font-family: open sans;
+  font-family: helvetica;
   font-size: 30px;
 
   border-bottom: solid;
   border-width: 1px;
   padding-left: 40px;
   padding-bottom: 5px;
+
+}
+
+h3 {
+color: white;
+font-family: helvetica;
 
 }
 
