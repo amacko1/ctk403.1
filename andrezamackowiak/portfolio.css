@@ -1,0 +1,405 @@
+body {
+  width: 100%;
+  background-color: #fdfcf7;
+  font-family: open sans, helvetica, arial;
+}
+
+@font-face {
+  font-family: 'DaisyWheel';
+  src: url('daisywhl.woff2') format('woff2'),
+    url('daisywhl.woff') format('woff'),
+    url('daisywhl.otf') format('truetype');
+}
+
+h2 {
+  padding-top: 100px;
+  text-align: center;
+  color: #2D2D2C;
+  font-family: helvetica;
+}
+
+.navlinks {
+  float: right;
+  font-family: open sans, sans-serif;
+  padding-right: 35px;
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+.navlinks a {
+  width: 100%;
+  padding-left: 15px;
+  text-decoration: none;
+  color: #2D2D2C;
+}
+
+.navlinks a:visited {
+  text-decoration: none;
+  color: #2D2D2C;
+}
+
+.navlinks a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.myname {
+  width: 100%;
+  font-family: 'DaisyWheel', sans-serif;
+  font-size: 30px;
+  padding-left: 35px;
+  padding-top: 25px;
+}
+
+.myname a {
+  text-decoration: none;
+  color: #2D2D2C;
+}
+
+.myname a:visited {
+  text-decoration: none;
+  color: #2D2D2C;
+}
+
+.myname a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* image grid srtat */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: open sans, helvetica, arial;
+  background-color: #fdfcf7;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('OpenSans.woff2') format('woff2'),
+    url('OpenSans.woff') format('woff'),
+    url('OpenSans-Regular.ttf') format('truetype');
+}
+
+/* Center website */
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row>.column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 20px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row>.column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none;
+  /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+/* image grid end */
+/* webdesing */
+.cardweb img {
+  width: 30%;
+  padding-top: 20px;
+  margin-left: 25px;
+}
+
+.linkweb {
+  text-align: center;
+  padding-top: 35px;
+}
+
+.linkweb a {
+  color: #2D2D2C;
+  padding-left: 30px;
+}
+
+.linkweb a:link {
+  text-decoration: none;
+  color: #2D2D2C;
+}
+
+.linkweb a:visited {
+  text-decoration: none;
+  color: #2D2D2C;
+}
+
+.linkweb a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* webdesing */
+.linksskills {
+  text-align: center;
+  color: #2D2D2C;
+  padding-top: 100px;
+  padding-bottom: 30px;
+
+
+
+  background-image: url("download.svg");
+  background-image: opacity(40%);
+background-image: padding (10px)
+
+
+  background-repeat:no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.linksskills ul li {
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.linksskills ul li a:link {
+  text-decoration: none;
+  color: #2D2D2C;
+}
+
+.linksskills ul li a:visited {
+  text-decoration: none;
+  color: #2D2D2C;
+}
+
+.linksskills ul li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* incianco video */
+.section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #2B3044;
+}
+
+.section-header h1 {
+  font: 400 32px "open sans", helvetica, sans-serif;
+  text-transform: none;
+  color: #fff;
+}
+
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  grid-gap: 15px;
+  max-width: 1100px;
+  padding: 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.video-gallery .gallery-item {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: #000;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.video-gallery .gallery-item img {
+  position: relative;
+  display: block;
+  width: 115%;
+  height: 300px;
+  object-fit: cover;
+  opacity: .5;
+  /*transition: opacity .35s, transform .35s;*/
+  transition: all 350ms ease-in-out;
+  transform: translate3d(-23px, 0, 0);
+  /*backface-visibility: hidden;*/
+}
+
+.north-cascades-img {
+  object-position: 50% 30%;
+}
+
+.video-gallery .gallery-item .gallery-item-caption {
+  padding: 32px;
+  font-size: 1em;
+  color: white;
+  text-transform: uppercase;
+}
+
+.video-gallery .gallery-item .gallery-item-caption,
+.video-gallery .gallery-item .gallery-item-caption>a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-gallery .gallery-item h3 {
+  font-weight: 300;
+  overflow: hidden;
+  padding: 12px 0;
+}
+
+.video-gallery .gallery-item h3,
+.video-gallery .gallery-item p {
+  position: relative;
+  margin: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.video-gallery .gallery-item p {
+  letter-spacing: 1px;
+  font-size: 10px;
+  padding: 12px 0;
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(10%, 0, 0);
+}
+
+.video-gallery .gallery-item:hover img {
+  opacity: 0.3;
+  transform: translate3d(0, 0, 0);
+}
+
+.video-gallery .gallery-item .gallery-item-caption {
+  text-align: left;
+}
+
+.video-gallery .gallery-item h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  height: 1px;
+  background: #white;
+  transition: transform 0.3s;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.video-gallery .gallery-item:hover h3::after {
+  transform: translate3d(0, 0, 0);
+}
+
+.video-gallery .gallery-item:hover p {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/*
+@media screen and (max-width: 784px) {
+  .video-gallery {
+    width: 100%;
+    padding: 15px;
+
+  }
+  .video-gallery .gallery-item {
+    width: 95%;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+*/
+/* fim video */
+footer {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+}
