@@ -11,6 +11,43 @@ body {
        url('daisywhl.otf') format('truetype');
 }
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+  min-height: 100vh;
+}
+
+.title p {
+  text-align: center;
+  font-size: 5vmin;
+  line-height: 1;
+  letter-spacing: 4px;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, black, white, black);
+  background-size: 70% 100%;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  animation: shade 16s linear infinite;
+}
+
+@keyframes shade {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
+
+
+
 .navlinks {
 
   float:right;
@@ -92,14 +129,6 @@ background-image: padding (10px)
   padding-top: 20px;
 
 
-          background-image: url("download.svg");
-          background-image: opacity(40%);
-        background-image: padding (10px)
-
-
-          background-repeat:no-repeat;
-          background-size: cover;
-          position: relative;
 
 }
 
@@ -114,9 +143,10 @@ background-image: padding (10px)
 
 #cards {
 width: 100%;
-padding-left: 170px;
+padding-left: 150px;
 padding-right: 80px;
 padding-top: 10px;
+margin-left: 0px;
 
 }
 

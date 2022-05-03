@@ -98,8 +98,8 @@ body {
 .col-6 .img {
   width:50%;
   padding-left: 30px;
-  filter: saturate(70%);
-  filter:brightness(70%);
+  filter: saturate(0%);
+
 
 
 }
@@ -107,7 +107,7 @@ body {
 .col-6 .img:hover {
 
   filter: saturate(100%);
-  filter:brightness(100%);
+
 
 }
 
